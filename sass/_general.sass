@@ -1,0 +1,886 @@
+html
+    font-family: 'Gilroy', sans-serif!important
+    outline: none
+
+
+body
+    font-family: 'Gilroy', sans-serif!important
+    background-image: url('../img/pattern_bg.jpg') 
+
+header
+    background: #FBF7F6
+    position: fixed
+    width: 100%
+    top: 0
+    z-index: 10
+
+.preheader
+    height: 32px
+    background: #FBF7F6
+    &_list
+        display: flex
+        list-style: none
+        padding-inline-start: 0px
+        margin-top: 8px
+        li
+            display: flex
+            align-content: center
+            align-items: center
+            border-right: 2px solid #014F53
+            padding: 0 7px 0 7px
+            color: #014F53
+            &:last-child
+                border-right: 0px solid #014F53
+                padding: 0 0px 0 7px
+            &:first-child
+                padding: 0 7px 0 0px
+            a
+                font-family: 'Gilroy', sans-serif
+                font-weight: 500
+                font-size: 14px
+                line-height: 14px
+                text-decoration: none
+                color: #014F53                
+                &:hover
+                    color: #FF4439
+                    text-decoration: none
+    .delivery
+        display: flex
+        align-items: center
+        width: 348px
+        margin-top: 3px
+        margin-left: 18px
+        &_city
+            font-family: 'Gilroy', sans-serif
+            font-weight: 500
+            font-size: 14px
+            line-height: 14px
+        &_tel
+            margin-left: 4px
+            a
+                font-family: 'Gilroy', sans-serif
+                font-weight: 500
+                font-size: 14px
+                line-height: 14px
+                text-decoration: none
+                color: #014F53
+    &_links
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        margin-top: 9px
+        width: 390px
+        &_items
+            font-family: 'Gilroy', sans-serif
+            font-weight: 500
+            font-size: 14px
+            line-height: 14px
+            margin-left: 15px
+            text-decoration: none
+            color: #014F53
+            transition: 0.2s all
+            &:hover
+                color: #FF4439
+                text-decoration: none
+                font-weight: 500
+
+.header
+    height: 86px
+    padding-top: 20px
+
+    .left
+        display: flex
+        justify-content: space-between
+        align-items: center
+        img
+            height: 41px
+            width: 173px
+
+        ul
+            display: flex
+            align-items: center
+            list-style: none
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 21px;
+            color: #014F53;
+            margin: 0
+            li 
+                padding-left: 20px
+                display: flex
+                flex-direction: column
+                align-items: center
+                &:hover span
+                    width: 90%
+                span
+                    display: block
+                    height: 2px
+                    width: 0
+                    background: #FF4439
+                    transition: 0.3s all
+                a 
+                    color: #014F53;
+                    text-align: center
+                    &:hover
+                        text-decoration: none
+    .right
+        display: flex
+        justify-content: flex-end
+        align-items: center
+
+        .block_1
+            width: 120px;
+            height: 45px;
+            background: #FFFCF2;
+            border-radius: 10px;
+            .user
+                display: flex
+                align-items: center
+                .square
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    width: 41px;
+                    height: 41px;
+                    background: #014F53;
+                    border-radius: 8px;
+                    margin: 2px 0 0 2px
+                    &::before
+                        content: ''
+                        width: 16px
+                        height: 19px
+                        background-image: url('../icons/user.svg') 
+                .user_square
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    width: 73px;
+                    height: 41px;
+                    .user_title
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 19px;
+                        font-feature-settings: 'kern' off;
+                        margin-left: 6px
+                        color: #014F53;
+
+        .block_2
+            width: 136px;
+            height: 45px;
+            background: #FFFCF2;
+            border-radius: 10px;
+            margin-left: 20px
+            .cart
+                display: flex
+                align-items: center
+                .square
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    width: 41px;
+                    height: 41px;
+                    background: #FF4439
+                    border-radius: 8px;
+                    margin: 2px 0 0 2px
+                    &::before
+                        content: ''
+                        display: block
+                        width: 20px
+                        height: 20px
+                        background: url('../icons/cart.svg') center (center/cover) no-repeat
+                .cart_price
+                    font-family: Gilroy;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 19px;
+                    margin-left: 6px
+                    font-family: Gilroy;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #FF4439;
+.slider
+    margin-top: 120px
+    height: 610px
+    background: url('../img/banner.jpg') center (center/cover) no-repeat
+body
+    min-height: 100%
+    background-image: url('../img/pattern_bg.jpg') 
+.category
+    display: flex
+    justify-content: space-around
+    align-items: center
+    position: relative
+    height: 205px
+    top: -30px
+    width: 1200px
+    right: -50%
+    transform: translateX(-50%)
+
+    .row
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-around
+        align-items: center   
+        .category_card
+            display: flex
+            flex-direction: column
+            align-items: center
+            height: 205px
+            background: #ffffff
+            border-radius: 10px
+            cursor: pointer
+            transition: 0.3s all
+            &:hover.category_card
+                    background: #FF4439
+                    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.25);
+            &:hover .category_card_block .category_name
+                    color: #ffffff
+            &:hover
+                .c1
+                    background-size: 106%
+                .c2
+                    background-size: 106%
+                .c3
+                    background-size: 106%
+                .c4
+                    background-size: 106%
+                .c5
+                    background-size: 106%
+                .c6
+                    background-size: 106%
+            .category_img
+                width: 160px
+                height: 160px
+                border-radius: 10px
+                background-size: 100%
+            .c1
+                background: url('../img/Rectangle 59.jpg') center (center/cover) no-repeat
+                background-size: 100%
+                transition: 0.3s all
+            .c2
+                background: url('../img/Rectangle 59-1.jpg') center (center/cover) no-repeat
+                background-size: 100%
+                transition: 0.3s all
+            .c3
+                background: url('../img/Rectangle 59-2.jpg') center (center/cover) no-repeat
+                background-size: 100%
+                transition: 0.3s all
+            .c4
+                background: url('../img/Rectangle 59-3.jpg') center (center/cover) no-repeat
+                background-size: 100%
+                transition: 0.3s all
+            .c5
+                background: url('../img/Rectangle 59-4.jpg') center (center/cover) no-repeat
+                background-size: 100%
+                transition: 0.3s all
+            .c6
+                background: url('../img/Rectangle 59-5.jpg') center (center/cover) no-repeat
+                background-size: 100%
+                transition: 0.3s all
+            .category_card_block
+                display: flex
+                justify-content: center
+                align-items: center
+                height: 44px
+                .category_name
+                    width: 100px
+                    font-family: Gilroy
+                    font-style: normal
+                    font-weight: 600
+                    font-size: 16px
+                    line-height: 96%
+                    text-align: center
+                    color: #014F53
+                    transition: 0.3s all
+    .left_arrow
+        position: relative
+        width: 30px
+        height: 30px
+        background: url('../img/left.svg') no-repeat
+        top: -10px
+    .right_arrow
+        position: relative
+        width: 30px
+        height: 30px
+        background: url('../img/right.svg') no-repeat
+        top: -10px     
+.filter
+    .row
+        justify-content: center
+        .filter_block
+            display: flex
+            flex-direction: column
+            justify-content: center
+            &_dscr
+                display: flex
+                justify-content: space-between
+                align-items: center
+                width: 1110px
+                .filter_block_title
+                    width: 532px;
+                    font-family: Gilroy;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 32px;
+                    line-height: 96%;
+                    color: #014F53;
+                .filter_block_add
+                    display: flex
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 96%;
+                    color: #014F53;
+                    &::before
+                        content: ''
+                        display: block
+                        width: 17px
+                        height: 17px
+                        background: url('../icons/filter.svg') center center/cover no-repeat
+                        margin-right: 9px
+            &_btn
+                display: flex
+                justify-content: space-between
+                align-items: center
+                margin-top: 20px
+                .filter_btn
+                    border: 2px solid #014F53;
+                    box-sizing: border-box;
+                    border-radius: 45px
+                    padding: 15px 25px 
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 96%;
+                    display: flex;
+                    align-items: center;
+                    color: #014F53
+                    cursor: pointer
+                    transition: 0.3s all
+                    &:hover
+                        color: #F34136
+                        border: 2px solid #F34136
+                    &:active
+                        color: #F34136
+                        border: 2px solid #F34136
+.category_title
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    width: 1110px
+    margin: 0 auto
+    margin-top: 50px
+    &_name
+        display: block
+        font-weight: 600
+        font-size: 32px
+        line-height: 96%
+        white-space: nowrap
+        color: #014F53
+    &_dvdr
+        margin-left: 2%
+        height: 3px
+        width: 98%
+        background: url('../icons/divider.svg')
+.products
+    .container
+        .row
+            justify-content: space-between
+            margin: 0 auto
+            .card
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                align-items: center
+                width: 255px
+                height: 310px
+                margin-top: 30px
+                border-radius: 10px
+                background: #ffffff
+                .up
+                    position: relative
+                    width: 255px
+                    height: 255px
+                    .round
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        position: absolute
+                        top: 10px
+                        right: 10px
+                        width: 28px
+                        height: 28px
+                        background: #02962B
+                        border-radius: 50%
+                        z-index: 4
+                        .img
+                            width: 18px
+                            height: 18px
+                            background: url('../icons/leaf.svg')
+                    .title
+                        position: absolute
+                        width: 233px
+                        left: 10px
+                        bottom: 10px
+                        z-index: 4
+                        font-weight: 600
+                        font-size: 18px
+                        line-height: 100%
+                        align-items: flex-end
+                        color: #FFFFFF
+                    .hover
+                        position: relative
+                        left: 0%
+                        right: 0%
+                        top: 0%
+                        bottom: 16.39%
+                        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 66.27%, rgba(0, 0, 0, 0.35) 100%)
+                        width: 255px
+                        height: 255px
+                        border-radius: 10px
+                        z-index: 3
+                        object-fit: contain   
+                        .gradient
+                            position: absolute
+                            width: 255px
+                            height: 255px
+                            background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 66.27%, rgba(0, 0, 0, 0.35) 100%)
+                            z-index: 3
+                            border-radius: 10px   
+                        .i1
+                            background: url('../img/product_1.jpg') center center/cover no-repeat
+                            +product
+                            
+                        .i2
+                            background: url('../img/product_2.jpg') center center/cover no-repeat
+                            +product
+                            
+                        .i3
+                            background: url('../img/product_3.jpg') center center/cover no-repeat
+                            +product
+                        .i4
+                            background: url('../img/product_4.jpg') center center/cover no-repeat
+                            +product
+                        .i5
+                            background: url('../img/product_5.jpg') center center/cover no-repeat
+                            +product
+                        .i6
+                            background: url('../img/product_6.jpg') center center/cover no-repeat
+                            +product
+                        .i7
+                            background: url('../img/product_7.jpg') center center/cover no-repeat
+                            +product
+                        .i8
+                            background: url('../img/product_8.jpg') center center/cover no-repeat
+                            +product
+                        .i9
+                            background: url('../img/product_9.jpg') center center/cover no-repeat
+                            +product
+                        .i10
+                            background: url('../img/product_10.jpg') center center/cover no-repeat
+                            +product
+                        .i11
+                            background: url('../img/product_11.jpg') center center/cover no-repeat
+                            +product
+                        .i12
+                            background: url('../img/product_12.jpg') center center/cover no-repeat
+                            +product
+                        .i13
+                            background: url('../img/product_13.jpg') center center/cover no-repeat
+                            +product
+                        .i14
+                            background: url('../img/product_14.jpg') center center/cover no-repeat
+                            +product
+                        .i15
+                            background: url('../img/product_15.jpg') center center/cover no-repeat
+                            +product
+                        .i16
+                            background: url('../img/product_16.jpg') center center/cover no-repeat
+                            +product
+                        .i17
+                            background: url('../img/product_17.jpg') center center/cover no-repeat
+                            +product
+                        .i18
+                            background: url('../img/product_18.jpg') center center/cover no-repeat
+                            +product
+                        .i19
+                            background: url('../img/product_19.jpg') center center/cover no-repeat
+                            +product
+                        .i20
+                            background: url('../img/product_20.jpg') center center/cover no-repeat
+                            +product
+                        .i21
+                            background: url('../img/product_21.jpg') center center/cover no-repeat
+                            +product
+                        .i22
+                            background: url('../img/product_22.jpg') center center/cover no-repeat
+                            +product
+                        .i23
+                            background: url('../img/product_23.jpg') center center/cover no-repeat
+                            +product
+                        .i24
+                            background: url('../img/product_24.jpg') center center/cover no-repeat
+                            +product
+                        .i25
+                            background: url('../img/product_25.jpg') center center/cover no-repeat
+                            +product
+                        .i26
+                            background: url('../img/product_26.jpg') center center/cover no-repeat
+                            +product
+                        .i27
+                            background: url('../img/product_27.jpg') center center/cover no-repeat
+                            +product
+                        .i28
+                            background: url('../img/product_28.jpg') center center/cover no-repeat
+                            +product
+                        .i29
+                            background: url('../img/product_29.jpg') center center/cover no-repeat
+                            +product
+                        .i30
+                            background: url('../img/product_30.jpg') center center/cover no-repeat
+                            +product
+                        .i31
+                            background: url('../img/product_31.jpg') center center/cover no-repeat
+                            +product
+                        .i32
+                            background: url('../img/product_32.jpg') center center/cover no-repeat
+                            +product                              
+                            
+                        
+                .switcher
+                    display: none
+                    justify-content: center
+                    align-items: center
+                    width: 255px
+                    transition: 0.3s all
+                    &_line
+                        display: flex
+                        justify-content: space-around
+                        align-items: center
+                        width: 32%
+                        height: 9px
+                        transition: 0.3s all
+                        &:first-of-type .switcher_line_inside
+                                background-color: #FF4439
+                        &_inside
+                            width: 96%
+                            height: 3px
+                            background-color: #C4C4C4
+                        &:hover
+                            &:nth-child(2) .switcher_line_inside
+                                background-color: #FF4439
+                            &:first-of-type .switcher_line_inside
+                                    background-color: #C4C4C4
+                            &:nth-child(3) .switcher_line_inside
+                                background-color: #FF4439
+                .down
+                    position: relative
+                    display: flex
+                    justify-content: space-between
+                    align-items: flex-end
+                    height: 50px
+                    width: 255px
+                    &_left
+                        width: auto
+                        height: 32px
+                        margin-left: 10px
+                        margin-bottom: 7px
+                        .price
+                            font-weight: 600
+                            font-size: 20px
+                            line-height: 96%
+                            color: #014F53
+                        .weight
+                            font-size: 11px
+                            font-weight:  400
+                            line-height: 96%
+                            color: #014F53
+                            margin-top: 2px
+                    &_right
+                        .add_btn
+                            display: flex
+                            align-items: center
+                            justify-content: space-around
+                            width: 127px
+                            height: 44px
+                            border-width: 2px
+                            border-style: none
+                            border-color: none
+                            background-color: #ffffff
+                            border-radius: 15px 0 10px 0
+                            box-shadow: none
+                            transition: 0.5s all
+                            &_icon
+                                display: block
+                                width: 20px
+                                height: 20px
+                                background: url('../icons/add_cart.svg') center center/cover no-repeat
+                                transition: 0.3s all
+                            p
+                                display: flex
+                                width: auto
+                                text-align: center
+                                font-weight: 600
+                                font-size: 16px
+                                line-height: 96%
+                                text-align: center
+                                color: #014F53
+                                margin-bottom: 0
+                                transition: 0.3s all
+                            &:hover
+                                background-color: #FF4439
+                                box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25)
+                            &:hover >p
+                                color: #ffffff
+                            &:hover >.add_btn_icon
+                                background: url('../icons/add_cart_white.svg')
+                &:hover
+                    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.25);
+                    .up .scale
+                        background-size: 105%
+                    .down_right .add_btn p
+                        color: #ffffff
+                    .down_right .add_btn
+                        background-color: #FF4439
+                    .down_right .add_btn_icon
+                        background: url('../icons/add_cart_white.svg')
+                    .switcher
+                        display: flex
+.recipe
+    margin-top: 32px
+    .row
+        justify-content: space-between
+        margin: 15px 0
+        .recipe_block
+            position: relative
+            display: flex
+            justify-content: space-between
+            align-items: center
+            width: 350px
+            height: 150px
+            border-radius: 10px
+            background: #ffffff
+            box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.15);
+            margin-bottom: 30px
+            &_left
+                position: relative
+                height: 150px
+                position: relative
+                padding: 15px 0 0 15px
+                .title
+                    width: 175px
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 100%;
+                    color: #014F53;
+                .dscr
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 120%;
+                    color: #014F53;
+                    width: 180px
+                    margin-top: 6px
+                .time
+                    position: absolute
+                    display: flex
+                    align-items: center
+                    bottom: 15px
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 120%
+                    color: #014F53;
+                    &:before
+                      content: ''
+                      width: 12.52px
+                      height: 16px
+                      background: url('../icons/time.svg')
+                      margin-right: 10px 
+            &_right
+                position: absolute
+                width: 170px
+                height: 171px
+                right: -11px
+                top: -6px
+                background: url('../img/tarelka_1.png') no-repeat
+                transform: rotate(0deg)
+                transition: 0.6s all
+            button
+                position: absolute
+                display: none
+                justify-content: center
+                align-items: center
+                background: #FFffff
+                border-radius: 0px 15px 0px 10px;
+                border-color: none
+                width: 166px
+                height: 44px
+                bottom: 0
+                padding: 0
+                border-width: 0
+                z-index: 3
+                transition: 0.3s all
+                &:hover
+                    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    p
+                      &::after
+                        content: ''
+                        width: 9px
+                        height: 15px
+                        background: url('../icons/arrow.svg') no-repeat
+                        margin-top: 2px
+                        margin-left: 10px 
+                p
+                    display: flex
+                    margin-block-end: 0
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 96%
+                    text-align: right;
+                    color: #fff
+                    &::after
+                        content: ''
+                        width: 9px
+                        height: 15px
+                        background: url('../icons/arrow.svg') no-repeat
+                        margin-top: 2px
+                        margin-left: 5px
+                        transition: 0.3s all
+            &:hover
+                button
+                    display: flex
+                    background: #FF4439
+                .recipe_block_right
+                    width: 180px
+                    height: 181px
+                    transform: rotate(6deg)
+.map
+    .row
+        justify-content: space-between
+        margin: 15px 0
+        .map_block
+            justify-content: space-between
+            margin-top: 40px
+            .map_frame
+                border-radius: 10px
+        .map_advantages
+            display: flex
+            justify-content: space-between
+            align-items: flex-start
+            margin-top: 30px
+            &_items
+                display: flex
+                width: 352px
+                height: 81px
+                .sqaure
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    width: 41px
+                    height: 41px
+                    background: #FF4439
+                    border-radius: 8px
+                            
+                &_dscr
+                    width: 296px
+                    margin-left: 15px
+                    .title
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 25px;
+                        color: #014F53;
+                    .dscr
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #014F53
+                        margin-top: 5px
+footer
+    min-height: 395px
+    background: #014F53
+    margin-top: 120px
+    padding: 55px
+    .row
+        justify-content: space-between
+        .footer_links
+            display: flex
+            justify-content: space-between
+            width: 65%
+            &_list
+                list-style: none
+                padding-inline-start: 0px
+                font-weight: 600;
+                font-size: 22px;
+                line-height: 96%
+                text-align: left
+                color: #FFFFFF;
+                li
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 96%;
+                    color: #FFFFFF;
+                    margin-top: 22px
+                    text-align: left
+                    &:first-of-type
+                        margin-top: 32px
+        .footer_contacts
+            position: relative
+            display: flex
+            flex-direction: column
+            justify-content: 
+            width: 252px
+            .tel
+                font-weight: 600;
+                font-size: 26px;
+                line-height: 96%;
+                text-align: right;
+                color: #FFFFFF;
+            .adress
+                margin-top: 28px
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 140%;
+                text-align: right;
+                color: #FFFFFF;
+            .social
+                position: absolute
+                right: 0
+                top: 130px
+    .row
+        margin-top: 62px
+        .dvdr
+            display: block
+            width: 1140px
+            height: 3px
+            background: url('../icons/divider_white.svg')
+            margin-bottom: 30px
+        div
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140%;
+            text-align: right;
+            color: #FFFFFF;           
+.none
+    visibility: hidden
+.red
+    background: #FF4439!important              
+
+.red_text
+    color: #FF4439!important
+.red_dvdr
+    margin-left: 2%
+    height: 3px
+    width: 98%
+    background: url('../icons/divider_red.svg')
+                
+                
+                
+
+
+            
+            
+
+        
